@@ -1,0 +1,26 @@
+.table__general {
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+  border-collapse:collapse;
+  border-radius: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 1px 1px 5px #000000;
+}
+
+.table__head:not(:last-child) {
+border-right: solid 1px black;
+}
+
+.table__common:not(:last-child) {
+border-right: solid 1px black;
+}
+
+.tableRow:nth-child(odd) {
+background-color: rgb(219, 209, 209);
+}
+
+table thead tr {
+  background-color: gray;
+}

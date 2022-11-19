@@ -1,0 +1,37 @@
+
+.item {
+    width: 200px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 1px 5px black;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+.statusOn {
+width: 10px;
+height: 10px;
+border-radius: 50%;
+background-color: green;
+margin: 0 10px;
+}
+.statusOff {
+width: 10px;
+height: 10px;
+border-radius: 50%;
+background-color: red;
+margin: 0 10px;
+}
+
+.name {
+    margin-left: 10px;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.avatar{
+    padding: 5px 0;
+}
