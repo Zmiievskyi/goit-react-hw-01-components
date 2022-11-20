@@ -1,7 +1,8 @@
 import PropTypes from "prop-types";
 import Style from "./Profile.module.scss";
 
-function Profile({ avatar, username, tag, location, stats}) {
+export default function Profile({ user }) {
+  const { avatar, username, tag, location, stats } = user;
   return (
     <div className={Style.profile}>
       <div className={Style.description}>
@@ -29,15 +30,16 @@ function Profile({ avatar, username, tag, location, stats}) {
 }
 
 Profile.propTypes = {
-  username: PropTypes.string.isRequired,
-  tag: PropTypes.string.isRequired,
-  location: PropTypes.string.isRequired,
-  avatar: PropTypes.string.isRequired,
-  stats: PropTypes.shape({
-    followers: PropTypes.number.isRequired,
-    views: PropTypes.number.isRequired,
-    likes: PropTypes.number.isRequired,
+  user: PropTypes.shape({
+    username: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    avatar: PropTypes.string.isRequired,
+    stats: PropTypes.shape({
+      followers: PropTypes.number.isRequired,
+      views: PropTypes.number.isRequired,
+      likes: PropTypes.number.isRequired,
+    }),
   }),
 };
 
-export default Profile;

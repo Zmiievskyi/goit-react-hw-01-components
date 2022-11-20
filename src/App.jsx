@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import "./App.css";
 
 import Profile from "./components/user/Profile";
@@ -12,17 +11,11 @@ import friends from "./path/friends.json";
 
 import TransactionHistory from "./components/transaction/TransactionHistory";
 import transactions from "./path/transactions.json";
-console.log(friends);
-function App() {
+
+export default function App() {
   return (
     <div className="App">
-      <Profile
-        avatar={user.avatar}
-        username={user.username}
-        tag={user.tag}
-        location={user.location}
-        stats={user.stats}
-      />
+      <Profile user={user}/>
       <Statistics title="Upload stats" stats={data} />
       <FriendList friends={friends} />
       <TransactionHistory transactions={transactions} />
@@ -30,4 +23,3 @@ function App() {
   );
 }
 
-export default App;
