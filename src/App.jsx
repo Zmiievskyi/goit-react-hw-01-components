@@ -12,7 +12,7 @@ import friends from "./path/friends.json";
 
 import TransactionHistory from "./components/transaction/TransactionHistory";
 import transactions from "./path/transactions.json";
-
+console.log(friends);
 function App() {
   return (
     <div className="App">
